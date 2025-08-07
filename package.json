@@ -1,12 +1,33 @@
 {
-  "name": "podcast-player",
-  "version": "0.1.0",
+  "name": "professional-podcast-player",
+  "version": "1.0.0",
+  "description": "A modern, professional podcast player built with Next.js, TypeScript, and Tailwind CSS",
   "private": true,
+  "author": "slingdoor",
+  "license": "MIT",
+  "homepage": "https://github.com/slingdoor/professional-podcast-player",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slingdoor/professional-podcast-player.git"
+  },
+  "keywords": [
+    "podcast",
+    "rss",
+    "audio-player",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "vercel"
+  ],
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
+    "dev:turbo": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "next": "15.4.6",
