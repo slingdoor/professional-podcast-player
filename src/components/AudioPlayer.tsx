@@ -2,7 +2,8 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX, SkipBack, SkipForward, Rewind, FastForward } from 'lucide-react';
-import { Episode, PlaybackState } from '@/types/podcast';
+import { Episode } from '@/types/podcast';
+import type { PlaybackState } from '@/types/podcast';
 import { formatDuration } from '@/lib/mock-data';
 import { usePlayer } from '@/contexts/PlayerContext';
 
